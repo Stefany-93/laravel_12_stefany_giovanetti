@@ -1,7 +1,7 @@
 <x-layout>
         
-        <div class="container-fluid bg-body-secondary bg-white-background">
-            <div class="row h-75 justify-content-center align-items-center">
+        <div class="container-fluid bg-bianco min-vh-100">
+            <div class="row justify-content-center align-items-center">
                 <div class="col-12">
                     <h1 class="text-center display-4 shadow text-marrone">{{$sandwich['name']}}</h1>
                 </div>

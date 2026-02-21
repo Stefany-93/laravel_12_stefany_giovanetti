@@ -55,6 +55,15 @@
 
 .img-panino {
     height: 400px;
-    width: 350px;
+    width: 500px;
     border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .img-panino {
+        width: 90%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    } 
 }

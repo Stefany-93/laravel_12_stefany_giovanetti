@@ -9,7 +9,7 @@
 <body>
 
     <x-navbar></x-navbar>
-    <div class="container-fluid min-vh-100 bg-custom">
+    <div class="container-fluid min-vh-100 bg-custom m-0 p-0">
         {{ $slot }}
     </div>
 

@@ -11,9 +11,9 @@ class MenuController extends Controller
         Saporito, diretto, per chi ama i sapori rustici.'],
         ['id' => 2, 'name' => 'Estate', 'img' => '/media/mozzarella.png', 'description' => 'Pagnottina croccante con mozzarella fresca appoggiata su un letto di mortadella piegata a ventaglio.
         Semplice, senza fronzoli, il classico panino preparato dalla nonna.'],
-        ['id' => 1, 'name' => 'Palermitano', 'img' => '/media/pistacchio.png', 'description' => 'Pagnottina croccante con spesse fette di mortadella  accompagnate da pesto di pistacchio e granella di pistacchio tostato.
+        ['id' => 3, 'name' => 'Palermitano', 'img' => '/media/pistacchio.png', 'description' => 'Pagnottina croccante con spesse fette di mortadella  accompagnate da pesto di pistacchio e granella di pistacchio tostato.
         Ricco, aromatico, perfetto per chi ama l’abbinamento iconico mortadella–pistacchio.'],
-        ['id' => 1, 'name' => 'Genovese', 'img' => '/media/pomodoro.png', 'description' => 'Pagnottina croccante con fette di mortadella tagliata grossa accompagnate da pesto genovese e pomodorini confit.
+        ['id' => 4, 'name' => 'Genovese', 'img' => '/media/pomodoro.png', 'description' => 'Pagnottina croccante con fette di mortadella tagliata grossa accompagnate da pesto genovese e pomodorini confit.
         Profumato, mediterraneo, con un equilibrio dolce–salato irresistibile.']
     ];
 
