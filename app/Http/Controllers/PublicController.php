@@ -18,7 +18,11 @@ class PublicController extends Controller
 
     public function thankYou(){
             return view('thankYou');
-        }
+    }
+
+    public function menu(){
+            return view('menu');
+    }
 
     public function submit(Request $request) {
         $name = $request->input('username');

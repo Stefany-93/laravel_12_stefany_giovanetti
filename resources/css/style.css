@@ -21,6 +21,10 @@
     background-color: var(--bianco);
 }
 
+.bg-rosa{
+    background-color: var(--rosa);
+}
+
 .text-marrone{
     color: var(--marrone);
 }
@@ -47,4 +51,10 @@
 .box-bg{
     background-color: var(--rosso);
     color: var(--bianco);
+}
+
+.img-panino {
+    height: 400px;
+    width: 350px;
+    border-radius: 20px;
 }

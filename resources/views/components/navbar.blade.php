@@ -10,6 +10,9 @@
                     <a class="nav-link text-marrone" aria-current="page" href="{{route('home')}}">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link text-marrone" href="{{route('menu')}}">Menù</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link text-marrone" href="{{route('contact.us')}}">Contattaci</a>
                 </li>
             </ul>
