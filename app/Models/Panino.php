@@ -13,6 +13,7 @@ class Panino extends Model
 
     protected $fillable = [
         'name',
-        'description'
+        'description',
+        'img'
     ];
 }

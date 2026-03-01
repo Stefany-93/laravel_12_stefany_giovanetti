@@ -12,7 +12,7 @@
             @foreach ($paninos as $panino)
                 <div class="col-12 col-md-3 py-5">
                     <div class="card" style="width: 18rem;">
-                        <img src="\media\tuo.png" class="card-img-top" alt="...">
+                        <img src="{{Storage::url($panino->img)}}" class="card-img-top" alt="...">
                             <div class="card-body bg-rosa text-marrone">
                                 <h5 class="card-title">{{$panino->name}}</h5>
                                 <p class="card-text">{{$panino->description}}</p>
