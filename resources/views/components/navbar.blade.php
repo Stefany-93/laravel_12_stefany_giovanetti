@@ -21,6 +21,31 @@
                 <li class="nav-item">
                     <a class="nav-link text-marrone" href="{{route('contact.us')}}">Contattaci</a>
                 </li>
+                <li class="nav-item dropdown">
+                    @auth
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ciao {{\Illuminate\Support\Facades\Auth::user()->name }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('form-logout').submit();">Esci</a>
+                            <form action="{{route('logout')}}" method="POST" style="display: none;" id="form-logout">@csrf</form>
+                        </li>
+                    </ul>
+                    @else
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Ciao
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="{{route('login')}}">Accedi</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{route('register')}}">Registrati</a>
+                        </li>
+                    </ul>
+                    @endauth
+                </li>
             </ul>
         </div>
     </div>
