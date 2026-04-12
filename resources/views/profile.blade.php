@@ -4,21 +4,17 @@
         <div class="row h-75 justify-content-center align-items-center">
             <div class="col-12 mt-1 px-0 py-0 bg-bianco">
                 <h1 class="text-center display-4 shadow text-marrone bg-rosa">
-                    PANINI
+                    Profilo di {{ \Illuminate\Support\Facades\Auth::user()->name }}
                 </h1>
             </div>
         </div>
         <div class="row justify-content-center align-items-center bg-bianco min-vh-100">
-            @forelse($panini as $panino)
-                <div class="col-12 col-md-3 py-5">
+            @forelse (\Illuminate\Support\Facades\Auth::user()->panini as $panino)
+                <div class="col-12 col-md-4 mb-3">
                     <x-card :panino="$panino" />
                 </div>
             @empty
-            <div class="col-12 d-flex justify-content-center">
-                <h2>
-                    NESSUN PANINO PRESENTE NEL MENU
-                </h2>
-            </div>
+                <h4 class="text-center">Non hai ancora creato nessun panino</h4>
             @endforelse
         </div>
     </div>
