@@ -15,6 +15,11 @@
                 {{ session('successMessage')}}
             </div>
         @endif
+        @if (session()->has('errorMessage'))
+            <div class="alert alert-warning">
+                {{ session('errorMessage')}}
+            </div>
+        @endif
         <div class="row height-custom align-items-center justify-content-center">
             <div class="col-12">
                 <h1 class="text-center display-1 title">MORTADELLOVE</h1>

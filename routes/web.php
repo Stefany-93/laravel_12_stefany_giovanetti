@@ -27,4 +27,4 @@ Route::put('/sandwich/update/{sandwich}', [SandwichController::class, 'update'])
 
 Route::delete('/sandwich/delete/{sandwich}', [SandwichController::class, 'destroy'])->name('sandwich.delete');
 
-Route::get('/user/profile', [SandwichController::class, 'profile'])->name('user.profile');
+Route::get('/user/profile', [PublicController::class, 'profile'])->name('user.profile');

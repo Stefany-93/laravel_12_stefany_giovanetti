@@ -15,5 +15,9 @@ class PublicController extends Controller
         public function contactUs() {
                 return view('contattaci');
         }
+
+        public function profile(){
+                return view('profile');
+        }
         
 }
